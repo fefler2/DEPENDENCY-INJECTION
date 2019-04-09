@@ -11,7 +11,7 @@ public class Abc2 {
         ConfigurableApplicationContext context = SpringApplication.run(Abc2.class, args);
 
 //        Alien a = new Alien();
-        //         Alien.class to typ jaki musi wziac Bean
+//                 Alien.class to typ jaki musi wziac Bean
         Alien a = context.getBean(Alien.class);
         a.show();
 

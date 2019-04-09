@@ -1,5 +1,6 @@
 package DepInjection;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
@@ -10,6 +11,9 @@ public class Alien {
     public int getAid() {
         return aid;
     }
+
+    @Autowired //
+    private Laptop laptop;
 
     public Alien() {
 //        super();
@@ -42,8 +46,17 @@ public class Alien {
 
     private String tech;
 
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
+
     public void show(){
         System.out.println("in show");
+        laptop.compile();
     }
 
 }
