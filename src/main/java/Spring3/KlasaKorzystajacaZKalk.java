@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class KlasaKorzystajacaZKalk {
 
-//    @Autowired
+    @Autowired
     private Kalk kalk;
 
     public String  show() {
