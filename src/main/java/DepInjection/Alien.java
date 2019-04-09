@@ -11,7 +11,7 @@ public class Alien {
         return aid;
     }
 
-    public Alien(int aid, String aname, String tech) {
+    public Alien() {
 //        super();
         System.out.println("Object created");
 
