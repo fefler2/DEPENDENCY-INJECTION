@@ -10,6 +10,10 @@ public class KlasaKorzystajacaZKalk {
 
     @Autowired
     private Kalk kalk;
+    // odpowiednik private Kalk kalk = new Kalk();
+
+    @Autowired
+    private Kalk kalk2;
 
     public String  show() {
         return
